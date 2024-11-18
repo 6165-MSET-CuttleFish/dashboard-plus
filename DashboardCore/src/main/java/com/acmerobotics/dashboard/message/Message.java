@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.message;
+package com.cuttlefish.dashboard.message;
 
 /**
  * Class for representing dashboard messages.

@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.canvas;
+package com.cuttlefish.dashboard.canvas;
 
 @SuppressWarnings({"checkstyle:MultipleVariableDeclarations", "checkstyle:EmptyLineSeparator"})
 public class Spline extends CanvasOp {

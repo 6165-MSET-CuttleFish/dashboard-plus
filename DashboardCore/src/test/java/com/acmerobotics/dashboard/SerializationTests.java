@@ -1,11 +1,11 @@
-package com.acmerobotics.dashboard;
+package com.cuttlefish.dashboard;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.acmerobotics.dashboard.config.reflection.ReflectionConfig;
-import com.acmerobotics.dashboard.config.variable.BasicVariable;
-import com.acmerobotics.dashboard.config.variable.ConfigVariable;
-import com.acmerobotics.dashboard.config.variable.CustomVariable;
+import com.cuttlefish.dashboard.config.reflection.ReflectionConfig;
+import com.cuttlefish.dashboard.config.variable.BasicVariable;
+import com.cuttlefish.dashboard.config.variable.ConfigVariable;
+import com.cuttlefish.dashboard.config.variable.CustomVariable;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 

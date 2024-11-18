@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.canvas;
+package com.cuttlefish.dashboard.canvas;
 
 public class StrokeWidth extends CanvasOp {
     private int width;

@@ -1,6 +1,6 @@
-package com.acmerobotics.dashboard;
+package com.cuttlefish.dashboard;
 
-import com.acmerobotics.dashboard.testopmode.TestOpMode;
+import com.cuttlefish.dashboard.testopmode.TestOpMode;
 
 public class TestSineWaveOpMode extends TestOpMode {
     TestDashboardInstance dashboard;

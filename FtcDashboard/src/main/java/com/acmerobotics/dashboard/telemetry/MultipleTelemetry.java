@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.telemetry;
+package com.cuttlefish.dashboard.telemetry;
 
 import androidx.annotation.Nullable;
 import java.util.ArrayList;

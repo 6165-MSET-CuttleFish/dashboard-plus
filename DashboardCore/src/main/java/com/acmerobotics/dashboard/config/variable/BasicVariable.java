@@ -1,6 +1,6 @@
-package com.acmerobotics.dashboard.config.variable;
+package com.cuttlefish.dashboard.config.variable;
 
-import com.acmerobotics.dashboard.config.ValueProvider;
+import com.cuttlefish.dashboard.config.ValueProvider;
 
 public class BasicVariable<T> extends ConfigVariable<T> {
     private VariableType type;

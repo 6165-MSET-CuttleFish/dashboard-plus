@@ -1,6 +1,6 @@
-package com.acmerobotics.dashboard.config.variable;
+package com.cuttlefish.dashboard.config.variable;
 
-import com.acmerobotics.dashboard.config.ConstantProvider;
+import com.cuttlefish.dashboard.config.ConstantProvider;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;

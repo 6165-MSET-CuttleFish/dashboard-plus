@@ -162,7 +162,7 @@ Op mode controls replicate limited DS functionality. Some gamepads are supported
 
 ## Camera
 
-Teams may be interested in previewing the two different vision systems, vision portal and traditional EasyOpenCV. The vision portal API was introduced in CenterStage 2023-2024 and it's usage with FTC dashboard is documented [in this op mode](https://github.com/acmerobotics/ftc-dashboard/blob/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/VisionPortalStreamingOpMode.java).
+Teams may be interested in previewing the two different vision systems, vision portal and traditional EasyOpenCV. The vision portal API was introduced in CenterStage 2023-2024 and it's usage with FTC dashboard is documented [in this op mode](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/VisionPortalStreamingOpMode.java).
 
 It is also possible to use traditional EasyOpenCV, using a call like `FtcDashboard.getInstance().startCameraStream(camera, 0);` where `camera` implements `CameraStreamSource`. In EasyOpenCV, this camera will be the same one you initialize with the code below.
 

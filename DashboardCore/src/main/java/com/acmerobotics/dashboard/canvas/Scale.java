@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.canvas;
+package com.cuttlefish.dashboard.canvas;
 
 public class Scale extends CanvasOp {
     private double scaleX;

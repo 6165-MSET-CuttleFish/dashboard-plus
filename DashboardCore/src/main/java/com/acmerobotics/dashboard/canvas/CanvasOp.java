@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.canvas;
+package com.cuttlefish.dashboard.canvas;
 
 import com.google.gson.annotations.SerializedName;
 

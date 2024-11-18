@@ -31,6 +31,6 @@ layout: default
 
 [Competition Use](competition)
 
-[Samples](https://github.com/acmerobotics/ftc-dashboard/tree/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode)
+[Samples](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode)
 
 [Javadoc](javadoc)

@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.config;
+package com.cuttlefish.dashboard.config;
 
 public class ConstantProvider<T> implements ValueProvider<T> {
     private final T value;

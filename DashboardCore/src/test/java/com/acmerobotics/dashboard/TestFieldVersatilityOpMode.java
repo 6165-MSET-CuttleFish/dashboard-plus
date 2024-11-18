@@ -1,8 +1,8 @@
-package com.acmerobotics.dashboard;
+package com.cuttlefish.dashboard;
 
-import com.acmerobotics.dashboard.config.ValueProvider;
-import com.acmerobotics.dashboard.telemetry.TelemetryPacket;
-import com.acmerobotics.dashboard.testopmode.TestOpMode;
+import com.cuttlefish.dashboard.config.ValueProvider;
+import com.cuttlefish.dashboard.telemetry.TelemetryPacket;
+import com.cuttlefish.dashboard.testopmode.TestOpMode;
 
 public class TestFieldVersatilityOpMode extends TestOpMode {
     TestDashboardInstance dashboard;

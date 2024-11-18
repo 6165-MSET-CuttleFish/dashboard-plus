@@ -1,17 +1,17 @@
-package com.acmerobotics.dashboard.message;
+package com.cuttlefish.dashboard.message;
 
-import com.acmerobotics.dashboard.message.redux.GetConfig;
-import com.acmerobotics.dashboard.message.redux.GetRobotStatus;
-import com.acmerobotics.dashboard.message.redux.InitOpMode;
-import com.acmerobotics.dashboard.message.redux.ReceiveConfig;
-import com.acmerobotics.dashboard.message.redux.ReceiveGamepadState;
-import com.acmerobotics.dashboard.message.redux.ReceiveImage;
-import com.acmerobotics.dashboard.message.redux.ReceiveOpModeList;
-import com.acmerobotics.dashboard.message.redux.ReceiveRobotStatus;
-import com.acmerobotics.dashboard.message.redux.ReceiveTelemetry;
-import com.acmerobotics.dashboard.message.redux.SaveConfig;
-import com.acmerobotics.dashboard.message.redux.StartOpMode;
-import com.acmerobotics.dashboard.message.redux.StopOpMode;
+import com.cuttlefish.dashboard.message.redux.GetConfig;
+import com.cuttlefish.dashboard.message.redux.GetRobotStatus;
+import com.cuttlefish.dashboard.message.redux.InitOpMode;
+import com.cuttlefish.dashboard.message.redux.ReceiveConfig;
+import com.cuttlefish.dashboard.message.redux.ReceiveGamepadState;
+import com.cuttlefish.dashboard.message.redux.ReceiveImage;
+import com.cuttlefish.dashboard.message.redux.ReceiveOpModeList;
+import com.cuttlefish.dashboard.message.redux.ReceiveRobotStatus;
+import com.cuttlefish.dashboard.message.redux.ReceiveTelemetry;
+import com.cuttlefish.dashboard.message.redux.SaveConfig;
+import com.cuttlefish.dashboard.message.redux.StartOpMode;
+import com.cuttlefish.dashboard.message.redux.StopOpMode;
 
 /**
  * Dashboard message types. These values match the corresponding Redux actions in the frontend.

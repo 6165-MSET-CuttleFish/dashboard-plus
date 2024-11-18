@@ -22,14 +22,14 @@ Check out our [online documentation](https://acmerobotics.github.io/ftc-dashboar
 
 1. Open [`build.dependencies.gradle`](https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/build.dependencies.gradle)
 2. In the `repositories` section, add `maven { url = 'https://maven.brott.dev/' }`
-3. In the `dependencies` section, add `implementation 'com.acmerobotics.dashboard:dashboard:0.4.16'`
+3. In the `dependencies` section, add `implementation 'com.cuttlefish.dashboard:dashboard:0.4.16'`
 
-    Please see [GitHub releases page](https://github.com/acmerobotics/ftc-dashboard/releases) for the latest version number
+    Please see [GitHub releases page](https://github.com/6165-MSET-CuttleFish/dashboard-plus/releases) for the latest version number
 
 4. If you’re using OpenRC or have non-standard SDK dependencies, add the following exclusion:
 
     ```
-    implementation('com.acmerobotics.dashboard:dashboard:0.4.16') {
+    implementation('com.cuttlefish.dashboard:dashboard:0.4.16') {
       exclude group: 'org.firstinspires.ftc'
     }
     ```
@@ -41,7 +41,7 @@ Check out our [online documentation](https://acmerobotics.github.io/ftc-dashboar
 1. Install Node.js
 
    - Note: Node.js 16+ is required for builds to work on M1 MacBooks
-   - Current Node version used in gradle builds can be found in [FtcDashboard/build.gradle](https://github.com/acmerobotics/ftc-dashboard/blob/master/FtcDashboard/build.gradle#L33)
+   - Current Node version used in gradle builds can be found in [FtcDashboard/build.gradle](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/master/FtcDashboard/build.gradle#L33)
    - Node version is `18.12.1` as of time of writing
 
 2. Install Yarn
@@ -74,8 +74,8 @@ Check out our [online documentation](https://acmerobotics.github.io/ftc-dashboar
 To test without an FTC app, run the mock server located at `DashboardCore/src/test/java/com/acmerobotics/dashboard/TestServer.java`.
 
 - Mock server is a simple Java server hosting mock FTC op modes
-- A test sample op mode can be found at [`TestSineWaveOpMode.java`](https://github.com/acmerobotics/ftc-dashboard/blob/master/DashboardCore/src/test/java/com/acmerobotics/dashboard/TestSineWaveOpMode.java)
-- Test op modes are registered in [`TestOpModeManager.java`](https://github.com/acmerobotics/ftc-dashboard/blob/8ac8b29257dede5f4a13c440fe6756efc270cbb8/DashboardCore/src/test/java/com/acmerobotics/dashboard/testopmode/TestOpModeManager.java#L10)
+- A test sample op mode can be found at [`TestSineWaveOpMode.java`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/master/DashboardCore/src/test/java/com/acmerobotics/dashboard/TestSineWaveOpMode.java)
+- Test op modes are registered in [`TestOpModeManager.java`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/8ac8b29257dede5f4a13c440fe6756efc270cbb8/DashboardCore/src/test/java/com/acmerobotics/dashboard/testopmode/TestOpModeManager.java#L10)
 
 # Basic Architecture
 
@@ -83,9 +83,9 @@ To test without an FTC app, run the mock server located at `DashboardCore/src/te
 
 Dashboard's server is split into two packages, `DashboardCore` and `FtcDashboard`
 
-- [Dashboard Core](https://github.com/acmerobotics/ftc-dashboard/tree/master/DashboardCore/src/main/java/com/acmerobotics/dashboard)
+- [Dashboard Core](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/DashboardCore/src/main/java/com/acmerobotics/dashboard)
   - A standalone library that can be used to create a dashboard server for any Java application
-- [FtcDashboard](https://github.com/acmerobotics/ftc-dashboard/tree/master/FtcDashboard/src/main/java/com/acmerobotics/dashboard)
+- [FtcDashboard](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/FtcDashboard/src/main/java/com/acmerobotics/dashboard)
   - A wrapper around `DashboardCore` that provides relevant tooling and hooks for FTC teams
   - Contains the API FTC teams will access and manipulate through their own code
   - This package also contains the browser client source
@@ -94,7 +94,7 @@ Dashboard's server is split into two packages, `DashboardCore` and `FtcDashboard
 
 Primary interface as a web-client acessible to the end-user through a web browser
 
-- Located in [`client`](https://github.com/acmerobotics/ftc-dashboard/tree/master/client)
+- Located in [`client`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/client)
 - Installation and run instructions mentioned above
 - TypeScript + React application
 - Vite for builds
@@ -102,21 +102,21 @@ Primary interface as a web-client acessible to the end-user through a web browse
 
 ### Relevant files
 
-- [Dashboard.tsx](https://github.com/acmerobotics/ftc-dashboard/blob/master/client/src/components/Dashboard/Dashboard.tsx)
+- [Dashboard.tsx](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/master/client/src/components/Dashboard/Dashboard.tsx)
   - Primary functional entrypoint
-- [LayoutPreset.tsx](https://github.com/acmerobotics/ftc-dashboard/blob/master/client/src/enums/LayoutPreset.tsx)
+- [LayoutPreset.tsx](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/master/client/src/enums/LayoutPreset.tsx)
   - Contains preset layouts
-- [`views/`](https://github.com/acmerobotics/ftc-dashboard/tree/master/client/src/components/views)
+- [`views/`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/client/src/components/views)
   - Contains the various views that can be displayed on the dashboard
     - Graphs
     - Telemetry
     - Gamepad
     - etc
-- [`store/`](https://github.com/acmerobotics/ftc-dashboard/tree/master/client/src/store)
+- [`store/`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/client/src/store)
   - Contains shared state management logic
     - Web Socket connection
     - Gamepad state management
     - Storage middleware
     - etc
 - Views subscribe to websocket updates via the Redux store
-  - Basic example can be found in the [`TelemetryView`](https://github.com/acmerobotics/ftc-dashboard/blob/8ac8b29257dede5f4a13c440fe6756efc270cbb8/FtcDashboard/dash/src/components/views/TelemetryView.tsx#L21) component
+  - Basic example can be found in the [`TelemetryView`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/8ac8b29257dede5f4a13c440fe6756efc270cbb8/FtcDashboard/dash/src/components/views/TelemetryView.tsx#L21) component

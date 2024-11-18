@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.config;
+package com.cuttlefish.dashboard.config;
 
 /**
  * A generic interface for providing and storing a single value.

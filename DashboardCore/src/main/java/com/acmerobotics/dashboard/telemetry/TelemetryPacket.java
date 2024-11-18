@@ -1,6 +1,6 @@
-package com.acmerobotics.dashboard.telemetry;
+package com.cuttlefish.dashboard.telemetry;
 
-import com.acmerobotics.dashboard.canvas.Canvas;
+import com.cuttlefish.dashboard.canvas.Canvas;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.config.variable;
+package com.cuttlefish.dashboard.config.variable;
 
 import com.google.gson.annotations.SerializedName;
 

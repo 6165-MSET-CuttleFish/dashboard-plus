@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard.canvas;
+package com.cuttlefish.dashboard.canvas;
 
 public class Alpha extends CanvasOp {
     private double alpha;

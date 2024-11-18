@@ -1,6 +1,6 @@
-package com.acmerobotics.dashboard;
+package com.cuttlefish.dashboard;
 
-import com.acmerobotics.dashboard.message.Message;
+import com.cuttlefish.dashboard.message.Message;
 
 public interface SendFun {
     void send(Message message);

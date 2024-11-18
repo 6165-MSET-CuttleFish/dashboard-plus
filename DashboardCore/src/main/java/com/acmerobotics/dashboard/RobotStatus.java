@@ -1,4 +1,4 @@
-package com.acmerobotics.dashboard;
+package com.cuttlefish.dashboard;
 
 /**
  * Container for information about the active op mode and its state.

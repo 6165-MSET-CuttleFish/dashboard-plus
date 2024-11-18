@@ -1,8 +1,8 @@
-package com.acmerobotics.dashboard.message.redux;
+package com.cuttlefish.dashboard.message.redux;
 
-import com.acmerobotics.dashboard.config.variable.CustomVariable;
-import com.acmerobotics.dashboard.message.Message;
-import com.acmerobotics.dashboard.message.MessageType;
+import com.cuttlefish.dashboard.config.variable.CustomVariable;
+import com.cuttlefish.dashboard.message.Message;
+import com.cuttlefish.dashboard.message.MessageType;
 
 public class ReceiveConfig extends Message {
     private CustomVariable configRoot;

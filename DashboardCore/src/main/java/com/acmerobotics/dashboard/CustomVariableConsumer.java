@@ -1,6 +1,6 @@
-package com.acmerobotics.dashboard;
+package com.cuttlefish.dashboard;
 
-import com.acmerobotics.dashboard.config.variable.CustomVariable;
+import com.cuttlefish.dashboard.config.variable.CustomVariable;
 
 public interface CustomVariableConsumer {
     void accept(CustomVariable customVariable);

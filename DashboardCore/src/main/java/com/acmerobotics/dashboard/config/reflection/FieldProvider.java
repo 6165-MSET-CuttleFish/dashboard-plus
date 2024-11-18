@@ -1,6 +1,6 @@
-package com.acmerobotics.dashboard.config.reflection;
+package com.cuttlefish.dashboard.config.reflection;
 
-import com.acmerobotics.dashboard.config.ValueProvider;
+import com.cuttlefish.dashboard.config.ValueProvider;
 import java.lang.reflect.Field;
 
 /**
