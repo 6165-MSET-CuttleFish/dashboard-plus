@@ -10,7 +10,7 @@ FTC Dashboard provides telemetry and monitoring tools for FTC robots during oper
 - Custom dashboard layouts
 - Telemetry CSV export
 
-Check out our [online documentation](https://acmerobotics.github.io/ftc-dashboard).
+Check out our [online documentation](https://6165-MSET-CuttleFish.github.io/ftc-dashboard).
 
 |       Screenshot of custom layout        |          Screenshot with theme           |
 | :--------------------------------------: | :--------------------------------------: |
@@ -71,11 +71,11 @@ Check out our [online documentation](https://acmerobotics.github.io/ftc-dashboar
 
 ## Mock server
 
-To test without an FTC app, run the mock server located at `DashboardCore/src/test/java/com/acmerobotics/dashboard/TestServer.java`.
+To test without an FTC app, run the mock server located at `DashboardCore/src/test/java/com/6165-MSET-CuttleFish/dashboard/TestServer.java`.
 
 - Mock server is a simple Java server hosting mock FTC op modes
-- A test sample op mode can be found at [`TestSineWaveOpMode.java`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/master/DashboardCore/src/test/java/com/acmerobotics/dashboard/TestSineWaveOpMode.java)
-- Test op modes are registered in [`TestOpModeManager.java`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/8ac8b29257dede5f4a13c440fe6756efc270cbb8/DashboardCore/src/test/java/com/acmerobotics/dashboard/testopmode/TestOpModeManager.java#L10)
+- A test sample op mode can be found at [`TestSineWaveOpMode.java`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/master/DashboardCore/src/test/java/com/cuttlefish/dashboard/TestSineWaveOpMode.java)
+- Test op modes are registered in [`TestOpModeManager.java`](https://github.com/6165-MSET-CuttleFish/dashboard-plus/blob/8ac8b29257dede5f4a13c440fe6756efc270cbb8/DashboardCore/src/test/java/com/6165-MSET-CuttleFish/dashboard/testopmode/TestOpModeManager.java#L10)
 
 # Basic Architecture
 
@@ -83,9 +83,9 @@ To test without an FTC app, run the mock server located at `DashboardCore/src/te
 
 Dashboard's server is split into two packages, `DashboardCore` and `FtcDashboard`
 
-- [Dashboard Core](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/DashboardCore/src/main/java/com/acmerobotics/dashboard)
+- [Dashboard Core](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/DashboardCore/src/main/java/com/cuttlefish/dashboard)
   - A standalone library that can be used to create a dashboard server for any Java application
-- [FtcDashboard](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/FtcDashboard/src/main/java/com/acmerobotics/dashboard)
+- [FtcDashboard](https://github.com/6165-MSET-CuttleFish/dashboard-plus/tree/master/FtcDashboard/src/main/java/com/cuttlefish/dashboard)
   - A wrapper around `DashboardCore` that provides relevant tooling and hooks for FTC teams
   - Contains the API FTC teams will access and manipulate through their own code
   - This package also contains the browser client source
